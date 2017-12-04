@@ -72,7 +72,7 @@ function removeFromCart(item) {
   var itemExists = false;
   for (var i = 0; i<cart.length; i++) {
     if (cart[i].hasOwnProperty(item)){
-      //
+      delete cart[i][item];
       itemExists = true;
     } 
     
